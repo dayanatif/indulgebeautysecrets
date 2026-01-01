@@ -709,10 +709,18 @@
         </p>
         
         <div style="margin-bottom: 40px;">
-            <a href="tel:+61469680286" class="btn" style="font-size: 1.2rem; padding: 18px 45px; display: inline-flex; align-items: center; gap: 10px;">
-                <i class="fab fa-whatsapp"></i> Call / WhatsApp +61 469 680 286
-            </a>
-            <p style="margin-top: 15px; color: #d4527e; font-weight: 600;">Tap to contact us directly</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
+                <!-- WhatsApp Button -->
+                <a href="https://wa.me/61469680286" class="btn" style="background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); font-size: 1.2rem; padding: 18px 45px; display: inline-flex; align-items: center; gap: 10px; min-width: 220px;">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                
+                <!-- Call Button -->
+                <a href="tel:+61469680286" class="btn" style="font-size: 1.2rem; padding: 18px 45px; display: inline-flex; align-items: center; gap: 10px; min-width: 220px;">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+            </div>
+            <p style="margin-top: 15px; color: #d4527e; font-weight: 600;">Tap your preferred contact method</p>
         </div>
 
         <div style="border-top: 1px solid rgba(0,0,0,0.05); padding-top: 30px;">
@@ -729,8 +737,16 @@
     <h2 class="fade-in">Contact Us</h2>
     <div class="contact-grid">
         <div class="glass-card contact-item fade-in">
+            <div class="icon" style="background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);"><i class="fab fa-whatsapp"></i></div>
+            <strong>WhatsApp</strong>
+            <p><a href="https://wa.me/61469680286">+61 469 680 286</a></p>
+            <p style="font-size: 0.8rem; margin-top: 5px; color: #128C7E;">Fastest response time</p>
+            <p style="font-size: 0.8rem; margin-top: 5px;">Available during trading hours</p>
+        </div>
+        
+        <div class="glass-card contact-item fade-in">
             <div class="icon"><i class="fas fa-phone"></i></div>
-            <strong>Call or WhatsApp</strong>
+            <strong>Call Us</strong>
             <p><a href="tel:+61469680286">+61 469 680 286</a></p>
             <p style="font-size: 0.8rem; margin-top: 5px;">Available Mon-Fri, 4:30 PM - 10:00 PM</p>
             <p style="font-size: 0.8rem; margin-top: 5px;">Sat & Sun, 8:30 AM - 10:00 PM</p>
@@ -740,6 +756,7 @@
             <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
             <strong>Visit Us</strong>
             <p>Canberra, ACT</p>
+            <p style="font-size: 0.8rem; margin-top: 5px;">By appointment only</p>
         </div>
     </div>
 </section>
