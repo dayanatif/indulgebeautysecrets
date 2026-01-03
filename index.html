@@ -136,18 +136,26 @@
             gap: 10px;
         }
 
-        .logo-icon {
-            font-size: 1.5rem;
-            color: #d4527e;
-            background: white;
-            width: 35px;
-            height: 35px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(212, 82, 126, 0.2);
-        }
+        /* REPLACE your current .logo-icon with this */
+.logo-icon {
+    width: 40px;                /* I increased this slightly for better visibility */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: white;          /* Remove this if your logo already has a background */
+    box-shadow: 0 4px 10px rgba(212, 82, 126, 0.2);
+    overflow: hidden;           /* This keeps the image inside the rounded corners */
+}
+
+/* ADD this new section right below it */
+.logo-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;        /* This prevents your logo from stretching */
+    padding: 3px;               /* This gives your logo a little "breathing room" */
+}
 
         .logo-text {
             display: flex;
@@ -476,12 +484,14 @@
     <header id="mainHeader">
         <div class="header-container">
             <div class="logo">
-                <span class="logo-icon">✦</span>
-                <div class="logo-text">
-                    <span class="brand-name">Indulge</span>
-                    <span class="brand-sub">Beauty Secrets</span>
-                </div>
-            </div>
+    <div class="logo-icon">
+        <img src="FINAL LOGO.jpeg" alt="logo">
+    </div>
+    <div class="logo-text">
+        <span class="brand-name">INDULGE</span>
+        <span class="brand-sub">BEAUTY SECRETS</span>
+    </div>
+</div>
             <nav class="desktop-nav">
                 <a href="#services">Services</a>
                 <a href="#pricing">Pricing</a>
@@ -605,7 +615,7 @@
             <h3>Waxing & Tinting</h3>
             <div class="price-item"><span>Full Leg Wax</span><span>$40</span></div>
             <div class="price-item"><span>Full Arm Wax</span><span>$25</span></div>
-            <div class="price-item"><span>Sides / Stomach</span><span>$20 / $25</span></div>
+            <div class="price-item"><span>Sides / Stomach</span><span>$20 - $25</span></div>
             <div class="price-item"><span>Eyebrow (Wax/Thread)</span><span>$10</span></div>
             <div class="price-item"><span>Lash & Brow Tint</span><span>$15</span></div>
             <div class="price-item"><span>Brow Lamination</span><span>$50</span></div>
@@ -828,4 +838,3 @@
     </script>
 </body>
 </html>
-
